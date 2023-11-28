@@ -1,3 +1,4 @@
+import React from 'react';
 import * as THREE from 'three';
 
 const scene = new THREE.Scene();
@@ -14,8 +15,8 @@ scene.add( cube );
 
 camera.position.z = 5;
 
-function animate() {
-	requestAnimationFrame( animate );
+function Animate() {
+	requestAnimationFrame( Animate );
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
@@ -23,4 +24,4 @@ function animate() {
 	renderer.render( scene, camera );
 }
 
-animate();
+export default Animate();

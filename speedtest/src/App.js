@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Animate from './components/threeD'
 import './App.css';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <Animate />
+      </div>
     </div>
   );
 }
